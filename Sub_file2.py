@@ -128,6 +128,9 @@ def app():
         end_time = end_time * 1000
         dk=df[df['start']>=start_time] 
         dk= dk[dk['end']<= end_time]
+        dk['end'] = df['end'].astype('Int64')
+
+        dk['start']= df['start'].astype('Int64')
 
         dk['start'] = pd.to_datetime(dk['start'],unit='ms',utc = True)
         dk['end'] = pd.to_datetime(dk['end'],unit='ms',utc = True)
