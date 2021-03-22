@@ -116,7 +116,7 @@ def app():
         df['start']= df['start'].astype('Int64')
 
         def epoch_time(x):
-            format = '%Y-%m-%d %H:%M:%S' # The format 
+            format = '%Y-%m-%dT%H:%M:%S' # The format 
             time = x
             datetime_str = datetime.datetime.strptime(time, format) 
             epoch = calendar.timegm(datetime_str.timetuple())
