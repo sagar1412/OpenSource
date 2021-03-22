@@ -132,8 +132,8 @@ def app():
 
         dk['start']= dk['start'].astype('Int64')
 
-        dk['start'] = pd.to_datetime(dk['start'], format='%d/%m/%y %H:%M:%S')
-        dk['end'] = pd.to_datetime(dk['end'],format='%d/%m/%y %H:%M:%S')
+        dk['start'] = pd.to_datetime(dk['start'],unit='ms')
+        dk['end'] = pd.to_datetime(dk['end'],unit='ms)
         df["start"].astype(str)
         df["end"].astype(str)
         dk.reset_index(inplace=True)
