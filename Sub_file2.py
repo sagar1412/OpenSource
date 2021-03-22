@@ -53,7 +53,7 @@ import subprocess
 def app():
     import streamlit as st
     import streamlit as st
-    from flask import Flask, render_template, request ,jsonify,make_response
+#     from flask import Flask, render_template, request ,jsonify,make_response
     import streamlit as st
     import time
     import datetime
@@ -62,7 +62,7 @@ def app():
     import pandas as pd
     import sqlite3
     import calendar 
-    from flask_cors import CORS
+#     from flask_cors import CORS
     import numpy as np
     conn = sqlite3.connect('.///deviation.db',check_same_thread=False)
     c = conn.cursor()
