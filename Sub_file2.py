@@ -133,9 +133,9 @@ def app():
         dk['end'] = pd.to_datetime(dk['end'],unit='ms')
         df["start"].astype(str)
         df["end"].astype(str)
-        dk.reset_index(inplace=True)
-        dk['start'].astype(str)
-        dk['end'].astype(str)
+#         dk.reset_index(inplace=True)
+#         dk['start'].astype(str)
+#         dk['end'].astype(str)
 
         # user = dk.values.tolist()
         return dk
