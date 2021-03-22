@@ -136,7 +136,7 @@ def app():
         dk['end'] = pd.to_datetime(dk['end'],unit='ms',utc = True)
         df["start"].astype(str)
         df["end"].astype(str)
-        dk.reset_index(inplace=True)
+#         dk.reset_index(inplace=True)
         dk['start'].astype(str)
         dk['end'].astype(str)
 
