@@ -132,13 +132,12 @@ def app():
 
         dk['start']= dk['start'].astype('Int64')
 
-        dk['start'] = pd.to_datetime(dk['start'],unit='ms',utc = True)
-        dk['end'] = pd.to_datetime(dk['end'],unit='ms',utc = True)
+        dk['start'] = pd.to_datetime(dk['start'],unit='ms')
+        dk['end'] = pd.to_datetime(dk['end'],unit='ms')
         df["start"].astype(str)
         df["end"].astype(str)
-#         dk.reset_index(inplace=True)
-        dk['start'].astype(str)
-        dk['end'].astype(str)
+        dk.reset_index(inplace=True)
+
 
         # user = dk.values.tolist()
         return dk
