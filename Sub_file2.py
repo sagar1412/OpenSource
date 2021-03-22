@@ -1,7 +1,7 @@
 # app2.py
 import streamlit as st
 import streamlit as st
-from flask import Flask, render_template, request ,jsonify,make_response
+# from flask import Flask, render_template, request ,jsonify,make_response
 import streamlit as st
 import time
 import datetime
@@ -10,7 +10,7 @@ from datetime import date
 import pandas as pd
 import sqlite3
 import calendar 
-from flask_cors import CORS
+# from flask_cors import CORS
 import numpy as np
 import streamlit as st
 import configparser
