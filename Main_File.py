@@ -8,7 +8,7 @@ from datetime import date
 import pandas as pd
 import sqlite3
 import calendar 
-from flask_cors import CORS
+# from flask_cors import CORS
 import numpy as np
 import streamlit as st
 import configparser
