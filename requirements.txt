@@ -1,5 +1,4 @@
 plotly
 flask
 scipy
---upgrade pip
 pyforest
