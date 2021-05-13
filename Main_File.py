@@ -41,7 +41,7 @@ PAGES = {
     "Config Data": Sub_file1,
     "Deviation": Sub_file2
 }
-st.sidebar.header('ABB Cement App')
-selection = st.sidebar.radio("ABB Cement Selection Panel", list(PAGES.keys()))
+st.sidebar.header('DB App')
+selection = st.sidebar.radio("DB Cement Selection Panel", list(PAGES.keys()))
 page = PAGES[selection]
 page.app()
